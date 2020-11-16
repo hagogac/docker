@@ -1,0 +1,14 @@
+c5741@hp5741:~$ sudo ufw status
+[sudo] password for tc5741: 
+Status: active
+
+To                         Action      From
+--                         ------      ----
+22                         ALLOW       Anywhere                  
+OpenSSH                    ALLOW       Anywhere                  
+Nginx HTTPS                ALLOW       Anywhere                  
+22 (v6)                    ALLOW       Anywhere (v6)             
+OpenSSH (v6)               ALLOW       Anywhere (v6)             
+Nginx HTTPS (v6)           ALLOW       Anywhere (v6)             
+
+tc5741@hp5741:~$ 

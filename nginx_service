@@ -1,0 +1,18 @@
+tc5741@hp5741:~/Desktop$ sudo systemctl status nginx
+● nginx.service - A high performance web server and a reverse proxy server
+   Loaded: loaded (/lib/systemd/system/nginx.service; enabled; vendor preset: enabled)
+   Active: active (running) since Mon 2020-11-16 19:15:28 CET; 3min 53s ago
+     Docs: man:nginx(8)
+  Process: 8507 ExecStop=/sbin/start-stop-daemon --quiet --stop --retry QUIT/5 --pidfile /run/ng
+  Process: 10325 ExecStart=/usr/sbin/nginx -g daemon on; master_process on; (code=exited, status
+  Process: 10315 ExecStartPre=/usr/sbin/nginx -t -q -g daemon on; master_process on; (code=exite
+ Main PID: 10327 (nginx)
+    Tasks: 3 (limit: 4426)
+   CGroup: /system.slice/nginx.service
+           ├─10327 nginx: master process /usr/sbin/nginx -g daemon on; master_process on;
+           ├─10332 nginx: worker process
+           └─10333 nginx: worker process
+
+Nov 16 19:15:27 hp5741 systemd[1]: Starting A high performance web server and a reverse proxy se
+Nov 16 19:15:28 hp5741 systemd[1]: Started A high performance web server and a reverse proxy ser
+lines 1-16/16 (END)
